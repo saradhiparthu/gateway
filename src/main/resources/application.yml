@@ -1,0 +1,17 @@
+spring:
+	gateway:
+		routes:
+			-id: login
+			 uri:http://login
+			 predicates:
+				 - Path=/login/**
+server:
+	port: 5000
+	compression:
+    enabled: true
+		mime: application/json
+  compression:
+    min-response-size: 5120
+eureka:
+	
+      
